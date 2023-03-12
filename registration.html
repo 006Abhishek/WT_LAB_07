@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <script src="Regg.js"></script>
+	<link rel="stylesheet" href="reg.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+</head>
+<body>
+    <form   action="/register" method="post">
+      <div class="form">
+        <h2>Registered Here</h2>
+        <input id="uname"  type="text" name="uname" placeholder="Enter Your Name"><span id="nm" class="text-danger font-weight-bold"></span>
+        <input id="emaill" type="email" name="email" placeholder="Enter Email ID"><span id="em"></span>
+        <p class="db">DOB:</p>
+        <input id="dt" type="date" name="dob" placeholder=""><span id="dat"></span>
+        <input id="mble" type="tel" name="mobile" placeholder="Enter Your Mobile No."><span id="mb"></span>
+        <input id="pass" type="password" name="pasw" placeholder="Enter Password"><span id="pas"></span>
+        <input id="cpass" type="password" name="cpsw" placeholder="Conform Password"><span id="cpas"></span>
+        <button  class="btnn" type="submit" onclick="validate()" value="save"><a > Submit</a></button>
+      </div>
+    </form>
+</body>
+</html> 
